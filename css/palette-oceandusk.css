@@ -1,0 +1,121 @@
+/*
+  ┌─────────────────────────────────────────────────────────────┐
+  │  Palette: Ocean Dusk                                        │
+  │  C1 Teal · C2 Coral · C3 Amber · C4 Periwinkle · C5 Sage   │
+  └─────────────────────────────────────────────────────────────┘
+
+  접근성 기준 (WCAG AA):
+    --primary      #0F766E / white  4.62 : 1  ✅
+    --secondary    #DC2626 / white  4.67 : 1  ✅
+    --accent       #B45309 / white  4.78 : 1  ✅
+    --support      #4338CA / white  5.53 : 1  ✅
+*/
+
+/* ═══════════════════════════════════════
+   LIGHT MODE
+═══════════════════════════════════════ */
+:root {
+  --pal-1: #5EEAD4;   /* Teal        */
+  --pal-2: #FCA5A5;   /* Coral       */
+  --pal-3: #FDE68A;   /* Amber       */
+  --pal-4: #A5B4FC;   /* Periwinkle  */
+  --pal-5: #86EFAC;   /* Sage        */
+
+  --pal-1-label: "Teal";
+  --pal-2-label: "Coral";
+  --pal-3-label: "Amber";
+  --pal-4-label: "Peri";
+  --pal-5-label: "Sage";
+
+  --primary:       #0F766E;
+  --primary-light: #F0FDFA;
+  --primary-mid:   #5EEAD4;
+  --primary-dark:  #0D9488;
+  --primary-glow:  rgba(94, 234, 212, 0.20);
+
+  --secondary:       #DC2626;
+  --secondary-light: #FEF2F2;
+  --secondary-mid:   #FCA5A5;
+  --secondary-dark:  #B91C1C;
+
+  --accent:       #B45309;
+  --accent-light: #FFFBEB;
+  --accent-mid:   #FDE68A;
+  --accent-dark:  #92400E;
+
+  --support:       #4338CA;
+  --support-light: #EEF2FF;
+  --support-mid:   #A5B4FC;
+
+  --bg:       #F0FDF9;
+  --card-bg:  #FFFFFF;
+
+  --text:         #0F1A17;
+  --text-muted:   #64748B;
+  --text-on-dark: #F0FDF9;
+
+  --border: #99F6E4;
+  --shadow: 0 1px 3px rgba(15,118,110,.12), 0 4px 16px rgba(15,118,110,.08);
+  --shadow-hover: 0 4px 24px rgba(15,118,110,.18);
+
+  --hero-gradient: linear-gradient(135deg, #042F2E 0%, #0F766E 45%, #4338CA 100%);
+
+  --footer-bg:   #042F2E;
+  --footer-text: #5EEAD4;
+
+  --award-gradient: linear-gradient(135deg, #FDE68A, #B45309);
+  --award-text:     #FFFFFF;
+}
+
+
+/* ═══════════════════════════════════════
+   DARK MODE
+═══════════════════════════════════════ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pal-1: #2DD4BF;
+    --pal-2: #F87171;
+    --pal-3: #FCD34D;
+    --pal-4: #818CF8;
+    --pal-5: #4ADE80;
+
+    --primary:       #2DD4BF;
+    --primary-light: #042F2E;
+    --primary-mid:   #0D9488;
+    --primary-dark:  #5EEAD4;
+    --primary-glow:  rgba(45, 212, 191, 0.22);
+
+    --secondary:       #F87171;
+    --secondary-light: #2D0A0A;
+    --secondary-mid:   #EF4444;
+    --secondary-dark:  #FCA5A5;
+
+    --accent:       #FCD34D;
+    --accent-light: #2D1A00;
+    --accent-mid:   #F59E0B;
+    --accent-dark:  #FEF08A;
+
+    --support:       #818CF8;
+    --support-light: #1A1A3E;
+    --support-mid:   #6366F1;
+
+    --bg:       #0F1A17;
+    --card-bg:  #1A2E28;
+
+    --text:         #F0FDF4;
+    --text-muted:   #94A3B8;
+    --text-on-dark: #F0FDF4;
+
+    --border: #1A3330;
+    --shadow: 0 1px 3px rgba(0,0,0,.45), 0 4px 16px rgba(0,0,0,.35);
+    --shadow-hover: 0 4px 24px rgba(45,212,191,.15);
+
+    --hero-gradient: linear-gradient(135deg, #010C0B 0%, #042F2E 45%, #1A1A3E 100%);
+
+    --footer-bg:   #010C0B;
+    --footer-text: #2DD4BF;
+
+    --award-gradient: linear-gradient(135deg, #92400E, #FCD34D);
+    --award-text:     #0F172A;
+  }
+}

@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>권규빈 이력서 — 홍보마케팅 / 기획·PM</title>
+  <!-- 팔레트: 이 파일만 교체하면 전체 색상이 바뀝니다 -->
+  <link rel="stylesheet" href="css/palette-skyblush.css" id="palette-css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -319,6 +321,36 @@
       <p>© 2026 권규빈. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- ===== PALETTE WIDGET ===== -->
+  <div class="palette-widget" id="palette-widget">
+    <div class="palette-panel hidden" id="palette-panel">
+      <div class="palette-panel-title">컬러 팔레트</div>
+      <div class="palette-swatches" id="palette-swatches">
+        <div class="swatch" style="--c:var(--pal-1)" data-name="Sky"></div>
+        <div class="swatch" style="--c:var(--pal-2)" data-name="Blush"></div>
+        <div class="swatch" style="--c:var(--pal-3)" data-name="Peach"></div>
+        <div class="swatch" style="--c:var(--pal-4)" data-name="Lilac"></div>
+        <div class="swatch" style="--c:var(--pal-5)" data-name="Mist"></div>
+      </div>
+      <div class="palette-options">
+        <button class="pal-btn active" data-palette="skyblush"
+                data-labels='["Sky","Blush","Peach","Lilac","Mist"]'>
+          Sky Blush
+        </button>
+        <button class="pal-btn" data-palette="oceandusk"
+                data-labels='["Teal","Coral","Amber","Peri","Sage"]'>
+          Ocean Dusk
+        </button>
+      </div>
+    </div>
+    <button class="palette-toggle" id="palette-toggle" title="컬러 팔레트 변경"
+            aria-label="컬러 팔레트 변경" aria-expanded="false">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c.55 0 1-.45 1-1 0-.26-.1-.49-.26-.68a.99.99 0 0 1-.24-.66c0-.55.45-1 1-1h1.18c3.03 0 5.5-2.47 5.5-5.5C20.18 5.91 16.48 2 12 2zm-6 10c-.83 0-1.5-.67-1.5-1.5S5.17 9 6 9s1.5.67 1.5 1.5S6.83 12 6 12zm3-4c-.83 0-1.5-.67-1.5-1.5S8.17 5 9 5s1.5.67 1.5 1.5S9.83 8 9 8zm6 0c-.83 0-1.5-.67-1.5-1.5S14.17 5 15 5s1.5.67 1.5 1.5S15.83 8 15 8zm3 4c-.83 0-1.5-.67-1.5-1.5S17.17 9 18 9s1.5.67 1.5 1.5S18.83 12 18 12z"/>
+      </svg>
+    </button>
+  </div>
 
   <script src="js/script.js"></script>
 </body>
