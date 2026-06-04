@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>이력서 - 권기빈</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="profile-photo">
+          <!-- 사진을 images/ 폴더에 넣고 아래 src를 수정하세요 -->
+          <img src="images/profile.jpg" alt="프로필 사진" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <div class="photo-placeholder">
+            <span>사진</span>
+          </div>
+        </div>
+        <div class="hero-text">
+          <p class="greeting">안녕하세요,</p>
+          <h1 class="name">권기빈<span class="name-en">Kwon Kibeen</span></h1>
+          <p class="tagline"><!-- 한 줄 자기소개를 여기에 작성하세요 --></p>
+          <div class="contact-chips">
+            <a href="mailto:kwonqbeen@gmail.com" class="chip">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+              kwonqbeen@gmail.com
+            </a>
+            <a href="https://github.com/kwonqbeen-prog" target="_blank" class="chip">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <!-- 추가 연락처를 여기에 삽입하세요 -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-bg"></div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="layout">
+
+        <!-- Left Column -->
+        <aside class="sidebar">
+
+          <!-- Skills -->
+          <section class="card" id="skills">
+            <h2 class="section-title">기술 스택</h2>
+            <div class="skill-group">
+              <h3 class="skill-category">Languages</h3>
+              <div class="skill-tags">
+                <!-- 예시: <span class="tag">Python</span> -->
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-category">Frameworks / Libraries</h3>
+              <div class="skill-tags">
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-category">Tools</h3>
+              <div class="skill-tags">
+              </div>
+            </div>
+          </section>
+
+          <!-- Education -->
+          <section class="card" id="education">
+            <h2 class="section-title">학력</h2>
+            <!-- 예시:
+            <div class="edu-item">
+              <div class="edu-period">2020.03 – 2024.02</div>
+              <div class="edu-name">OO대학교</div>
+              <div class="edu-detail">컴퓨터공학과 졸업</div>
+            </div>
+            -->
+          </section>
+
+          <!-- Certifications -->
+          <section class="card" id="certifications">
+            <h2 class="section-title">자격증</h2>
+            <!-- 예시:
+            <div class="cert-item">
+              <div class="cert-name">정보처리기사</div>
+              <div class="cert-date">2023.11</div>
+            </div>
+            -->
+          </section>
+
+        </aside>
+
+        <!-- Right Column -->
+        <div class="content">
+
+          <!-- About -->
+          <section class="card" id="about">
+            <h2 class="section-title">자기소개</h2>
+            <p class="about-text">
+              <!-- 자기소개 내용을 여기에 작성하세요 -->
+            </p>
+          </section>
+
+          <!-- Experience -->
+          <section class="card" id="experience">
+            <h2 class="section-title">경력</h2>
+            <!-- 예시:
+            <div class="timeline-item">
+              <div class="timeline-header">
+                <div>
+                  <div class="timeline-title">회사명</div>
+                  <div class="timeline-subtitle">직책 / 팀</div>
+                </div>
+                <div class="timeline-period">2023.03 – 현재</div>
+              </div>
+              <ul class="timeline-desc">
+                <li>주요 업무 및 성과 1</li>
+                <li>주요 업무 및 성과 2</li>
+              </ul>
+            </div>
+            -->
+          </section>
+
+          <!-- Projects -->
+          <section class="card" id="projects">
+            <h2 class="section-title">프로젝트</h2>
+            <!-- 예시:
+            <div class="project-item">
+              <div class="project-header">
+                <div class="project-title">프로젝트명</div>
+                <div class="project-period">2024.01 – 2024.03</div>
+              </div>
+              <p class="project-desc">프로젝트 설명</p>
+              <div class="project-tags">
+                <span class="tag tag-project">React</span>
+                <span class="tag tag-project">Node.js</span>
+              </div>
+              <a href="#" class="project-link" target="_blank">GitHub →</a>
+            </div>
+            -->
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 권기빈. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
