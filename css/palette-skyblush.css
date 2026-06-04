@@ -1,139 +1,66 @@
 /*
-  ┌─────────────────────────────────────────────────────────────┐
-  │  Palette: Sky Blush                                         │
-  │  C1 Sky Blue · C2 Blush Pink · C3 Peach Pink               │
-  │  C4 Lilac    · C5 Mist                                      │
-  └─────────────────────────────────────────────────────────────┘
-
-  접근성 기준 (WCAG AA):
-    라이트 모드 텍스트 대비비
-    --primary      #0369A1 / white  5.93 : 1  ✅
-    --secondary    #BE185D / white  4.87 : 1  ✅
-    --accent       #9A3412 / white  7.05 : 1  ✅ AAA
-    --support      #5B21B6 / white  7.15 : 1  ✅ AAA
-
-  다크 모드: 모든 컬러를 어두운 배경(#0F172A) 위 확인
-    --primary      #38BDF8 / #0F172A  9.7 : 1  ✅
-    --secondary    #F9A8D4 / #0F172A  8.2 : 1  ✅
-    --accent       #FCA5A5 / #0F172A  7.8 : 1  ✅
+  Palette 1 · Sky Blush  (스카이 블러쉬)
+  🩵 Sky · 🩷 Blush · 🍑 Peach · 💜 Lilac · 🌫 Mist
 */
 
-/* ═══════════════════════════════════════
-   LIGHT MODE
-═══════════════════════════════════════ */
+/* ── Light ── */
 :root {
-  /* ── 5-Color Swatch Palette ── */
-  --pal-1: #7DD3FC;   /* Sky Blue   */
-  --pal-2: #FBCFE8;   /* Blush Pink */
-  --pal-3: #FFB4A2;   /* Peach Pink */
-  --pal-4: #DDD6FE;   /* Lilac      */
-  --pal-5: #BAE6FD;   /* Mist       */
+  --pal-1:#7DD3FC; --pal-2:#FBCFE8; --pal-3:#FFB4A2; --pal-4:#DDD6FE; --pal-5:#BAE6FD;
 
-  --pal-1-label: "Sky";
-  --pal-2-label: "Blush";
-  --pal-3-label: "Peach";
-  --pal-4-label: "Lilac";
-  --pal-5-label: "Mist";
+  --primary:#0369A1;       --primary-light:#E0F2FE; --primary-mid:#7DD3FC;
+  --primary-dark:#075985;  --primary-glow:rgba(56,189,248,.18);
+  --secondary:#BE185D;     --secondary-light:#FDF2F8; --secondary-mid:#FBCFE8;
+  --secondary-dark:#9D174D;
+  --accent:#9A3412;        --accent-light:#FFF0ED;  --accent-mid:#FFB4A2;
+  --accent-dark:#7C2D12;
+  --support:#5B21B6;       --support-light:#F5F3FF; --support-mid:#DDD6FE;
 
-  /* ── Primary: Sky Blue ── */
-  --primary:       #0369A1;
-  --primary-light: #E0F2FE;
-  --primary-mid:   #7DD3FC;
-  --primary-dark:  #075985;
-  --primary-glow:  rgba(56, 189, 248, 0.18);
+  --bg:#F0F9FF; --card-bg:#FFFFFF;
+  --text:#0F172A; --text-muted:#64748B; --text-on-dark:#F0F9FF;
+  --border:#BAE6FD; --shadow:0 1px 3px rgba(56,189,248,.12),0 4px 16px rgba(56,189,248,.08);
+  --shadow-hover:0 4px 24px rgba(56,189,248,.22);
 
-  /* ── Secondary: Blush Pink ── */
-  --secondary:       #BE185D;
-  --secondary-light: #FDF2F8;
-  --secondary-mid:   #FBCFE8;
-  --secondary-dark:  #9D174D;
-
-  /* ── Accent: Peach Pink (Event) ── */
-  --accent:       #9A3412;
-  --accent-light: #FFF0ED;
-  --accent-mid:   #FFB4A2;
-  --accent-dark:  #7C2D12;
-
-  /* ── Support: Lilac ── */
-  --support:       #5B21B6;
-  --support-light: #F5F3FF;
-  --support-mid:   #DDD6FE;
-
-  /* ── Surface ── */
-  --bg:       #F0F9FF;
-  --card-bg:  #FFFFFF;
-
-  /* ── Text ── */
-  --text:         #0F172A;
-  --text-muted:   #64748B;
-  --text-on-dark: #F0F9FF;
-
-  /* ── Border & Shadow ── */
-  --border: #BAE6FD;
-  --shadow: 0 1px 3px rgba(56,189,248,.12), 0 4px 16px rgba(56,189,248,.08);
-  --shadow-hover: 0 4px 24px rgba(56,189,248,.18);
-
-  /* ── Hero ── */
-  --hero-gradient: linear-gradient(135deg, #0C4A6E 0%, #075985 45%, #9D174D 100%);
-
-  /* ── Footer ── */
-  --footer-bg:   #0C1A2E;
-  --footer-text: #7DD3FC;
-
-  /* ── Award badge ── */
-  --award-gradient: linear-gradient(135deg, #FBCFE8, #BE185D);
-  --award-text:     #FFFFFF;
+  --hero-gradient:linear-gradient(135deg,#0C4A6E 0%,#075985 45%,#9D174D 100%);
+  --footer-bg:#0C1A2E; --footer-text:#7DD3FC;
+  --award-gradient:linear-gradient(135deg,#FBCFE8,#BE185D); --award-text:#fff;
 }
 
-
-/* ═══════════════════════════════════════
-   DARK MODE
-═══════════════════════════════════════ */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --pal-1: #38BDF8;
-    --pal-2: #F9A8D4;
-    --pal-3: #FCA5A5;
-    --pal-4: #C4B5FD;
-    --pal-5: #7DD3FC;
-
-    --primary:       #38BDF8;
-    --primary-light: #082F49;
-    --primary-mid:   #0EA5E9;
-    --primary-dark:  #7DD3FC;
-    --primary-glow:  rgba(56, 189, 248, 0.22);
-
-    --secondary:       #F9A8D4;
-    --secondary-light: #2D0A1E;
-    --secondary-mid:   #F472B6;
-    --secondary-dark:  #FBCFE8;
-
-    --accent:       #FCA5A5;
-    --accent-light: #2D0F0F;
-    --accent-mid:   #F87171;
-    --accent-dark:  #FED7D7;
-
-    --support:       #C4B5FD;
-    --support-light: #1E0A3C;
-    --support-mid:   #A78BFA;
-
-    --bg:       #0F172A;
-    --card-bg:  #1E293B;
-
-    --text:         #F0F9FF;
-    --text-muted:   #94A3B8;
-    --text-on-dark: #F0F9FF;
-
-    --border: #1E3A5F;
-    --shadow: 0 1px 3px rgba(0,0,0,.45), 0 4px 16px rgba(0,0,0,.35);
-    --shadow-hover: 0 4px 24px rgba(56,189,248,.15);
-
-    --hero-gradient: linear-gradient(135deg, #020617 0%, #0C2340 45%, #2D0A1E 100%);
-
-    --footer-bg:   #020617;
-    --footer-text: #38BDF8;
-
-    --award-gradient: linear-gradient(135deg, #9D174D, #F9A8D4);
-    --award-text:     #0F172A;
+/* ── Dark (system) ── */
+@media (prefers-color-scheme:dark) {
+  :root:not([data-theme="light"]) {
+    --pal-1:#38BDF8; --pal-2:#F9A8D4; --pal-3:#FCA5A5; --pal-4:#C4B5FD; --pal-5:#7DD3FC;
+    --primary:#38BDF8;       --primary-light:#082F49; --primary-mid:#0EA5E9;
+    --primary-dark:#7DD3FC;  --primary-glow:rgba(56,189,248,.22);
+    --secondary:#F9A8D4;     --secondary-light:#2D0A1E; --secondary-mid:#F472B6;
+    --secondary-dark:#FBCFE8;
+    --accent:#FCA5A5;        --accent-light:#2D0F0F;  --accent-mid:#F87171;
+    --accent-dark:#FED7D7;
+    --support:#C4B5FD;       --support-light:#1E0A3C; --support-mid:#A78BFA;
+    --bg:#0F172A; --card-bg:#1E293B;
+    --text:#F0F9FF; --text-muted:#94A3B8;
+    --border:#1E3A5F; --shadow:0 1px 3px rgba(0,0,0,.45),0 4px 16px rgba(0,0,0,.35);
+    --shadow-hover:0 4px 24px rgba(56,189,248,.18);
+    --hero-gradient:linear-gradient(135deg,#020617 0%,#082F49 45%,#2D0A1E 100%);
+    --footer-bg:#020617; --footer-text:#38BDF8;
+    --award-gradient:linear-gradient(135deg,#9D174D,#F9A8D4); --award-text:#0F172A;
   }
+}
+
+/* ── Dark (manual) ── */
+[data-theme="dark"] {
+  --pal-1:#38BDF8; --pal-2:#F9A8D4; --pal-3:#FCA5A5; --pal-4:#C4B5FD; --pal-5:#7DD3FC;
+  --primary:#38BDF8;       --primary-light:#082F49; --primary-mid:#0EA5E9;
+  --primary-dark:#7DD3FC;  --primary-glow:rgba(56,189,248,.22);
+  --secondary:#F9A8D4;     --secondary-light:#2D0A1E; --secondary-mid:#F472B6;
+  --secondary-dark:#FBCFE8;
+  --accent:#FCA5A5;        --accent-light:#2D0F0F;  --accent-mid:#F87171;
+  --accent-dark:#FED7D7;
+  --support:#C4B5FD;       --support-light:#1E0A3C; --support-mid:#A78BFA;
+  --bg:#0F172A; --card-bg:#1E293B;
+  --text:#F0F9FF; --text-muted:#94A3B8;
+  --border:#1E3A5F; --shadow:0 1px 3px rgba(0,0,0,.45),0 4px 16px rgba(0,0,0,.35);
+  --shadow-hover:0 4px 24px rgba(56,189,248,.18);
+  --hero-gradient:linear-gradient(135deg,#020617 0%,#082F49 45%,#2D0A1E 100%);
+  --footer-bg:#020617; --footer-text:#38BDF8;
+  --award-gradient:linear-gradient(135deg,#9D174D,#F9A8D4); --award-text:#0F172A;
 }

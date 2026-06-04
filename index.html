@@ -325,27 +325,83 @@
   <!-- ===== PALETTE WIDGET ===== -->
   <div class="palette-widget" id="palette-widget">
     <div class="palette-panel hidden" id="palette-panel">
-      <div class="palette-panel-title">컬러 팔레트</div>
-      <div class="palette-swatches" id="palette-swatches">
-        <div class="swatch" style="--c:var(--pal-1)" data-name="Sky"></div>
-        <div class="swatch" style="--c:var(--pal-2)" data-name="Blush"></div>
-        <div class="swatch" style="--c:var(--pal-3)" data-name="Peach"></div>
-        <div class="swatch" style="--c:var(--pal-4)" data-name="Lilac"></div>
-        <div class="swatch" style="--c:var(--pal-5)" data-name="Mist"></div>
+
+      <!-- 헤더: 제목 + 라이트/다크 토글 -->
+      <div class="palette-header">
+        <span class="palette-panel-title">컬러 테마</span>
+        <button class="theme-btn" id="theme-btn" aria-label="라이트/다크 모드 전환">
+          <!-- 아이콘과 텍스트는 JS가 채웁니다 -->
+        </button>
       </div>
-      <div class="palette-options">
-        <button class="pal-btn active" data-palette="skyblush"
-                data-labels='["Sky","Blush","Peach","Lilac","Mist"]'>
-          Sky Blush
+
+      <!-- 5종 팔레트 목록 -->
+      <div class="pal-list">
+
+        <button class="pal-option active" data-palette="skyblush">
+          <div class="pal-dots">
+            <span class="pal-dot" style="background:#7DD3FC"></span>
+            <span class="pal-dot" style="background:#FBCFE8"></span>
+            <span class="pal-dot" style="background:#FFB4A2"></span>
+          </div>
+          <span class="pal-option-name">Sky Blush</span>
+          <svg class="pal-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
         </button>
-        <button class="pal-btn" data-palette="oceandusk"
-                data-labels='["Teal","Coral","Amber","Peri","Sage"]'>
-          Ocean Dusk
+
+        <button class="pal-option" data-palette="oceandusk">
+          <div class="pal-dots">
+            <span class="pal-dot" style="background:#5EEAD4"></span>
+            <span class="pal-dot" style="background:#FCA5A5"></span>
+            <span class="pal-dot" style="background:#FDE68A"></span>
+          </div>
+          <span class="pal-option-name">Ocean Dusk</span>
+          <svg class="pal-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
         </button>
+
+        <button class="pal-option" data-palette="lavhaze">
+          <div class="pal-dots">
+            <span class="pal-dot" style="background:#E9D5FF"></span>
+            <span class="pal-dot" style="background:#FDA4AF"></span>
+            <span class="pal-dot" style="background:#F9A8D4"></span>
+          </div>
+          <span class="pal-option-name">Lavender Haze</span>
+          <svg class="pal-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </button>
+
+        <button class="pal-option" data-palette="mintmochi">
+          <div class="pal-dots">
+            <span class="pal-dot" style="background:#A7F3D0"></span>
+            <span class="pal-dot" style="background:#FBCFE8"></span>
+            <span class="pal-dot" style="background:#FEF08A"></span>
+          </div>
+          <span class="pal-option-name">Mint Mochi</span>
+          <svg class="pal-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </button>
+
+        <button class="pal-option" data-palette="sunsetglow">
+          <div class="pal-dots">
+            <span class="pal-dot" style="background:#FED7AA"></span>
+            <span class="pal-dot" style="background:#FDA4AF"></span>
+            <span class="pal-dot" style="background:#FDE68A"></span>
+          </div>
+          <span class="pal-option-name">Sunset Glow</span>
+          <svg class="pal-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </button>
+
       </div>
     </div>
-    <button class="palette-toggle" id="palette-toggle" title="컬러 팔레트 변경"
-            aria-label="컬러 팔레트 변경" aria-expanded="false">
+
+    <button class="palette-toggle" id="palette-toggle"
+            title="컬러 테마 변경" aria-label="컬러 테마 변경" aria-expanded="false">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c.55 0 1-.45 1-1 0-.26-.1-.49-.26-.68a.99.99 0 0 1-.24-.66c0-.55.45-1 1-1h1.18c3.03 0 5.5-2.47 5.5-5.5C20.18 5.91 16.48 2 12 2zm-6 10c-.83 0-1.5-.67-1.5-1.5S5.17 9 6 9s1.5.67 1.5 1.5S6.83 12 6 12zm3-4c-.83 0-1.5-.67-1.5-1.5S8.17 5 9 5s1.5.67 1.5 1.5S9.83 8 9 8zm6 0c-.83 0-1.5-.67-1.5-1.5S14.17 5 15 5s1.5.67 1.5 1.5S15.83 8 15 8zm3 4c-.83 0-1.5-.67-1.5-1.5S17.17 9 18 9s1.5.67 1.5 1.5S18.83 12 18 12z"/>
       </svg>

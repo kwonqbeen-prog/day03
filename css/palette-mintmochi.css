@@ -1,0 +1,63 @@
+/*
+  Palette 4 · Mint Mochi  (민트 모찌)
+  🍃 Mint · 🌸 Pink · 🍯 Honey · 🩵 Sky · 💚 Sage
+*/
+
+:root {
+  --pal-1:#A7F3D0; --pal-2:#FBCFE8; --pal-3:#FEF08A; --pal-4:#BAE6FD; --pal-5:#BBF7D0;
+
+  --primary:#047857;       --primary-light:#ECFDF5; --primary-mid:#A7F3D0;
+  --primary-dark:#065F46;  --primary-glow:rgba(16,185,129,.18);
+  --secondary:#BE185D;     --secondary-light:#FDF2F8; --secondary-mid:#FBCFE8;
+  --secondary-dark:#9D174D;
+  --accent:#92400E;        --accent-light:#FFFBEB;  --accent-mid:#FEF08A;
+  --accent-dark:#78350F;
+  --support:#0369A1;       --support-light:#E0F2FE; --support-mid:#BAE6FD;
+
+  --bg:#F0FDF4; --card-bg:#FFFFFF;
+  --text:#0A1F12; --text-muted:#64748B; --text-on-dark:#F0FDF4;
+  --border:#A7F3D0; --shadow:0 1px 3px rgba(4,120,87,.12),0 4px 16px rgba(4,120,87,.08);
+  --shadow-hover:0 4px 24px rgba(4,120,87,.22);
+
+  --hero-gradient:linear-gradient(135deg,#022C22 0%,#065F46 45%,#831843 100%);
+  --footer-bg:#022C22; --footer-text:#34D399;
+  --award-gradient:linear-gradient(135deg,#A7F3D0,#047857); --award-text:#fff;
+}
+
+@media (prefers-color-scheme:dark) {
+  :root:not([data-theme="light"]) {
+    --pal-1:#34D399; --pal-2:#F9A8D4; --pal-3:#FCD34D; --pal-4:#38BDF8; --pal-5:#4ADE80;
+    --primary:#34D399;       --primary-light:#022C22; --primary-mid:#10B981;
+    --primary-dark:#6EE7B7;  --primary-glow:rgba(52,211,153,.22);
+    --secondary:#F9A8D4;     --secondary-light:#2D0A1E; --secondary-mid:#F472B6;
+    --secondary-dark:#FBCFE8;
+    --accent:#FCD34D;        --accent-light:#2D1A00;  --accent-mid:#F59E0B;
+    --accent-dark:#FEF08A;
+    --support:#38BDF8;       --support-light:#082F49; --support-mid:#0EA5E9;
+    --bg:#0A1F12; --card-bg:#1A3A20;
+    --text:#F0FDF4; --text-muted:#94A3B8;
+    --border:#1A3A20; --shadow:0 1px 3px rgba(0,0,0,.45),0 4px 16px rgba(0,0,0,.35);
+    --shadow-hover:0 4px 24px rgba(52,211,153,.18);
+    --hero-gradient:linear-gradient(135deg,#010F07 0%,#022C22 45%,#2D0A1E 100%);
+    --footer-bg:#010F07; --footer-text:#34D399;
+    --award-gradient:linear-gradient(135deg,#065F46,#34D399); --award-text:#0A1F12;
+  }
+}
+
+[data-theme="dark"] {
+  --pal-1:#34D399; --pal-2:#F9A8D4; --pal-3:#FCD34D; --pal-4:#38BDF8; --pal-5:#4ADE80;
+  --primary:#34D399;       --primary-light:#022C22; --primary-mid:#10B981;
+  --primary-dark:#6EE7B7;  --primary-glow:rgba(52,211,153,.22);
+  --secondary:#F9A8D4;     --secondary-light:#2D0A1E; --secondary-mid:#F472B6;
+  --secondary-dark:#FBCFE8;
+  --accent:#FCD34D;        --accent-light:#2D1A00;  --accent-mid:#F59E0B;
+  --accent-dark:#FEF08A;
+  --support:#38BDF8;       --support-light:#082F49; --support-mid:#0EA5E9;
+  --bg:#0A1F12; --card-bg:#1A3A20;
+  --text:#F0FDF4; --text-muted:#94A3B8;
+  --border:#1A3A20; --shadow:0 1px 3px rgba(0,0,0,.45),0 4px 16px rgba(0,0,0,.35);
+  --shadow-hover:0 4px 24px rgba(52,211,153,.18);
+  --hero-gradient:linear-gradient(135deg,#010F07 0%,#022C22 45%,#2D0A1E 100%);
+  --footer-bg:#010F07; --footer-text:#34D399;
+  --award-gradient:linear-gradient(135deg,#065F46,#34D399); --award-text:#0A1F12;
+}
