@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#0369A1"/>
+      <stop offset="55%"  stop-color="#0EA5E9"/>
+      <stop offset="100%" stop-color="#BE185D"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="7" fill="url(#g)"/>
+  <text x="16" y="23" text-anchor="middle" fill="white"
+    font-size="19" font-weight="bold"
+    font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif">규</text>
+</svg>
